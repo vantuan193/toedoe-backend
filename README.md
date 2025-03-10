@@ -7,17 +7,41 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## Laravel TOEDOE API with Auth
+Basic Laravel TOEDOE API application included with Authentication Module & Task Module. It's included with JWT authentication and Swagger API format.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+----
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Language & Framework Used:
+1. PHP >= 8.2
+1. Laravel 11.x
+
+### Architecture Used:
+1. Laravel 11.x
+1. Interface-Repository Pattern
+1. Model Based Eloquent Query
+1. Swagger API Documentation - https://github.com/DarkaOnLine/L5-Swagger
+1. JWT Auth - https://github.com/tymondesigns/jwt-auth
+1. PHP Unit Testing - Some basic unit testing added.
+
+### How to Run:
+1. Clone Project:
+
+```bash
+git clone https://github.com/vantuan193/toedoe-backend.git
+```
+1. Go to the project drectory by `cd toedoe-backend` & Run the
+2. Create `.env` file & Copy `.env.example` file to `.env` file
+3. Create a database called - `toedoe-backend`.
+4. Install composer packages - `composer install`.
+5. Now migrate and seed database to complete whole project setup by running this-
+``` bash
+php artisan migrate:refresh --seed
+```
+2. Account Login:
+
+User name: test@example.com  
+Password: password
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
